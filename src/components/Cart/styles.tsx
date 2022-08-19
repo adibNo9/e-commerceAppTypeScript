@@ -3,30 +3,34 @@ import { makeStyles } from "@material-ui/core";
 export default makeStyles((theme) => ({
   toolbar: theme.mixins.toolbar,
   title: {
-    marginTop: '5%'
+    margin: "5% 0",
   },
   emptyButton: {
-    minWidth: '150px',
-    [theme.breakpoints.down('sm')]: {
-      marginBottom: "5px"
+    minWidth: "150px",
+    [theme.breakpoints.down("sm")]: {
+      marginBottom: "5px",
     },
-    [theme.breakpoints.up('sm')]: {
-      marginRight: '20px'
-    }
+    [theme.breakpoints.up("md")]: {
+      marginRight: "20px",
+    },
   },
-  checkoutButtom: {
-    minWidth: '150px'
+  checkoutButton: {
+    minWidth: "150px",
+  },
+  buttonContainer: {
+    [theme.breakpoints.down("sm")]: {
+      display: "flex",
+      flexDirection: "column",
+    },
   },
   link: {
-    textDecoration: 'none'
+    textDecoration: "none",
   },
   cardDetails: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    marginTop: '5%',
-    width: '100%',
-    paddingBottom: '5%'
+    display: "flex",
+    justifyContent: "space-between",
+    marginTop: "5%",
+    width: "100%",
+    paddingBottom: "5%",
   },
-}))
-
-
+}));
